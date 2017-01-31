@@ -19,7 +19,7 @@ def generate_random_number():
 
 def hilo1():
     global number1, ejecutarHilo_1
-    time.sleep(100/generate_random_number())
+    time.sleep(100 / generate_random_number())
     while ejecutarHilo_1:
         number1 = generate_random_number()
         print('Hilo 1: ' + str(number1))
@@ -29,7 +29,7 @@ def hilo1():
 
 def hilo2():
     global number2, ejecutarHilo_2
-    time.sleep(100/generate_random_number())
+    time.sleep(100 / generate_random_number())
     while ejecutarHilo_2:
         number2 = generate_random_number()
         print('Hilo 2: ' + str(number2))
@@ -76,5 +76,5 @@ print('/---------------------------------------------------\ ')
 print('|                SCORE / PUNTUACION                 |')
 print('|---------------------------------------------------| ')
 print('|----------|----------------------------------------| ')
-print('|   Time   |   ' + str(final_time) + ' Seg                |')
+print('|   Time   |              ' + str(final_time) + ' Seg    |')
 print('\----------|----------------------------------------/ ')
