@@ -56,7 +56,7 @@ hilo_1.start()
 hilo_2 = threading.Thread(target=hilo2)
 hilo_2.start()
 
-while hilo_1.isAlive() and hilo_2.isAlive():
+while hilo_1.isAlive() or hilo_2.isAlive():
     isThisNumber = int(input(''))
     if isThisNumber == number1:
         ejecutarHilo_1 = False
